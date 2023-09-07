@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-EDGE" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="html, css, javascript" />
+    <meta name="author" content="Joel Anang" />
+    <title>Get Out!- Maze Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+</head>
+<body oncontextmenu="return false">
+    <section>
+        <div id="wrapper" style="margin-left:auto; margin-right:auto;">
+            <h1 id="heading" style="background-color: #000000; text-decoration-style: solid; color: #F8F8F8; width: 40%; margin-top: 0px;">Get Out!</h1>
+            <div id="maze">
+                <div id="timerel" style="margin-left:auto; margin-right:auto;margin-top:5px;text-align: center;width: 15%;font-size: large"></div>
+                <p style="text-align: center; font-size: 12px; margin-bottom: 5px">You have 30 minutes to find your way out!</p>
+                <div id="c" style="margin-left:auto; margin-right:auto;margin-bottom: 10px;text-align: center;width: 10%;font-size: large"></div>
+    
+                <canvas id="canvas" width="523" height="523" style="margin-left:auto; margin-right:auto">
+                This text is displayed if your browser does not support HTML5 Canvas.
+            </canvas>
+                
+    
+            </div>
+    
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+    
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2 class="gamehead"></h2>
+                    </div>
+                    <div class="modal-footer">
+                        <h2 id="demo" onmouseover="" style="cursor:pointer;">Play Again?</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
